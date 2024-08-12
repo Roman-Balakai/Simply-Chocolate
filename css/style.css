@@ -47,7 +47,6 @@ img {
   padding: 0 20px;
   margin: 0 auto;
   box-sizing: border-box;
-  margin-bottom: 60px;
 }
 .headline {
   font-weight: 600;
@@ -129,7 +128,7 @@ img {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* ingredients */
+/* ingredients сделать ховер*/
 .ingredients {
   display: flex;
   flex-direction: column;
@@ -172,7 +171,7 @@ img {
 .list-item-ingredients {
   border: 1px solid #fd9222;
   border-radius: 15px;
-  padding: 28px 55px 28px 28px;
+  padding: 28px 54px 28px 28px;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
@@ -180,6 +179,9 @@ img {
 }
 .ingredients-img {
   padding-left: 28px;
+}
+.picture-igredients {
+  width: 100%;
 }
 .ingredients-text {
   font-weight: 600;
@@ -191,7 +193,17 @@ img {
 }
 
 /* made */
-.made {
+
+.headline-made {
+  margin-bottom: 32px;
+}
+.img-made {
+  border-radius: 15px;
+}
+.made-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 .container-todo {
   border-radius: 15px;
@@ -206,7 +218,6 @@ img {
   font-size: 18px;
   line-height: 1.33333;
   color: #111;
-  /* width: 307px; */
 }
 
 .list-made {
@@ -240,6 +251,34 @@ img {
   .list-item-benefits {
     width: 308px;
   }
+  .ingredients-headline {
+    width: 411px;
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  .ingredients-headline-text {
+    width: 486px;
+    margin-bottom: 50px;
+  }
+  .list-ingredients {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 30px;
+  }
+  .made {
+    padding: 0 77px;
+  }
+  .headline-made {
+    margin-bottom: 50px;
+  }
+  .container-todo {
+    row-gap: 28px;
+    padding: 32px 102px 32px 32px;
+  }
+  .made-cover {
+    width: 350px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -258,5 +297,28 @@ img {
   }
   .list-item-benefits:nth-child(3) {
     padding-right: 0;
+  }
+  .list-ingredients {
+    column-gap: 16px;
+  }
+  .list-item-ingredients {
+    padding: 28px 36px 28px 28px;
+    row-gap: 36px;
+  }
+  .ingredients-img {
+    padding-left: 0;
+  }
+  .made {
+    padding: 0 32px;
+  }
+  .made-content {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  .container-todo {
+    padding: 32px 59px 32px 32px;
+  }
+  .made-text {
+    width: 425px;
   }
 }

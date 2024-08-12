@@ -89,69 +89,78 @@
             </p>
             <ul class="list-ingredients">
                 <li class="list-item-ingredients">
-                    <img class="ingredients-img" src="/img/milk-chocolate.png"
-                        srcset="/img/milk-chocolate.png 1x, /img/milk-chocolate@2x.png 2x" alt="milk" />
+                    <picture class="picture-igredients">
+                        <source srcset="/img/milk-chocolate-desk.png 1x, /img/milk-chocolate-desk@2x.png 2x"
+                            media="(min-width:1200px)" />
+                        <source srcset="/img/milk-chocolate.png 1x, /img/milk-chocolate@2x.png 2x"
+                            media="(min-width:768px)" />
+                        <img class="ingredients-img" src="/img/milk-chocolate.png" alt="milk-chocolate" />
+                    </picture>
                     <p class="ingredients-text">mILK CHOCOLATE</p>
                 </li>
                 <li class="list-item-ingredients">
-                    <img class="ingredients-img" src="/img/milk.png" srcset="/img/milk.png 1x, /img/milk@2x.png 2x"
-                        alt="milk" />
+                    <picture class="picture-igredients">
+                        <source srcset="/img/milk-desk.png 1x, /img/milk-desk@2x.png 2x" media="(min-width:1200px)" />
+                        <source srcset="/img/milk.png 1x, /img/milk@2x.png 2x" media="(min-width:768px)" />
+                        <img class="ingredients-img" src="/img/milk-chocolate.png" alt="milk" />
+                    </picture>
                     <p class="ingredients-text">Milk</p>
                 </li>
                 <li class="list-item-ingredients">
-                    <img class="ingredients-img" src="/img/nuts.png" srcset="/img/nuts.png 1x, /img/nuts@2x.png 2x"
-                        alt="nuts" />
+                    <picture class="picture-igredients">
+                        <source srcset="/img/nuts-desk.png 1x, /img/nuts-desk@2x.png 2x" media="(min-width:1200px)" />
+                        <source srcset="/img/nuts.png 1x, /img/nuts@2x.png 2x" media="(min-width:768px)" />
+                        <img class="ingredients-img" src="/img/nuts.png" alt="nuts" />
+                    </picture>
                     <p class="ingredients-text">nuts</p>
                 </li>
                 <li class="list-item-ingredients">
-                    <img class="ingredients-img" src="/img/chocolate.png"
-                        srcset="/img/chocolate.png 1x, /img/chocolate@2x.png 2x" alt="chocolate" />
+                    <picture class="picture-igredients">
+                        <source srcset="/img/chocolate-desk.png 1x, /img/chocolate-desk@2x.png 2x"
+                            media="(min-width:1200px)" />
+                        <source srcset="/img/chocolate.png 1x, /img/chocolate@2x.png 2x" media="(min-width:768px)" />
+                        <img class="ingredients-img" src="/img/chocolate.png" alt="chocolate" />
+                    </picture>
                     <p class="ingredients-text">sEMI - SWEET CHOCOLATE</p>
                 </li>
             </ul>
         </section>
         <section class="container made">
-            <h2 class="headline">hOW IT’S <span class="headline-color">made?</span></h2>
-
-            <!-- <picture class="picture-rent">
-                <source srcset="/img/rent-a-yacht/yrent.jpg 1x, /img/rent-a-yacht/yrent-2x.jpg 2x" media="(min-width:1280px)" />
-                <source srcset="/img/rent-a-yacht/yrent-tab.jpg 1x, /img/rent-a-yacht/yrent-tab-2x.jpg 2x"
-                    media="(min-width:768px)" />
-                <source srcset="/img/rent-a-yacht/yrent-mob.jpg 1x, /img/rent-a-yacht/yrent-mob-2x.jpg 2x"
-                    media="(max-width:767px)" />
-                <img class="img-yacht-rent" src="/img/rent-a-yacht/yrent.jpg" alt="yacht" />
-            </picture> -->
-
-            <div class="container-todo">
-                <p class="made-cover">Try our chocolates today and discover the perfect balance of flavor</p>
-                <ul class="list-made">
-                    <li class="list-item-made">
-
-                        <!-- <svg width="32" height="32">
-                            <use href="/img/symbol-defs.svg#ellipse"></use>
-                        </svg> -->
-
-                        <p class="made-text">Heat the milk in a saucepan without bringing it to a boil. Add sugar and
-                            cocoa
-                            powder.</p>
-                    </li>
-                    <li class="list-item-made">
-                        <p class="made-text">At the same time, prepare a water bath. Melt the butter on it.</p>
-                    </li>
-                    <li class="list-item-made">
-                        <p class="made-text">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a
-                            silicone spatula so that the mass becomes
-                            uniform and silky.</p>
-                    </li>
-                    <li class="list-item-made">
-                        <p class="made-text">Heat the mixture over low heat, letting it barely boil.</p>
-                    </li>
-                    <li class="list-item-made">
-                        <p class="made-text">Pour the chocolate into special containers (can be replaced with ice
-                            molds).
-                            Allow to cool and harden.</p>
-                    </li>
-                </ul>
+            <h2 class="headline headline-made">hOW IT’S <span class="headline-color">made?</span></h2>
+            <div class="made-content">
+                <picture class="picture-made">
+                    <source srcset="/img/made-desk.jpg 1x, /img/made-desk@2x.jpg 2x" media="(min-width:1200px)" />
+                    <source srcset="/img/made-tab.jpg 1x, /img/made-tab@2x.jpg 2x" media="(min-width:768px)" />
+                    <source srcset="/img/made-mob.jpg 1x, /img/made-mob@2x.jpg 2x" media="(max-width:767px)" />
+                    <img class="img-made" src="/img/made-desk.jpg" alt="made chocolate" />
+                </picture>
+                <div class="container-todo">
+                    <p class="made-cover">Try our chocolates today and discover the perfect balance of flavor</p>
+                    <ul class="list-made">
+                        <li class="list-item-made">
+                            <p class="made-text">Heat the milk in a saucepan without bringing it to a boil. Add sugar
+                                and
+                                cocoa
+                                powder.</p>
+                        </li>
+                        <li class="list-item-made">
+                            <p class="made-text">At the same time, prepare a water bath. Melt the butter on it.</p>
+                        </li>
+                        <li class="list-item-made">
+                            <p class="made-text">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a
+                                silicone spatula so that the mass becomes
+                                uniform and silky.</p>
+                        </li>
+                        <li class="list-item-made">
+                            <p class="made-text">Heat the mixture over low heat, letting it barely boil.</p>
+                        </li>
+                        <li class="list-item-made">
+                            <p class="made-text">Pour the chocolate into special containers (can be replaced with ice
+                                molds).
+                                Allow to cool and harden.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section>
