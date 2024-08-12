@@ -47,6 +47,7 @@ img {
   padding: 0 20px;
   margin: 0 auto;
   box-sizing: border-box;
+  margin-bottom: 60px;
 }
 .headline {
   font-weight: 600;
@@ -217,4 +218,29 @@ img {
   line-height: 1.28571;
   letter-spacing: -0.02em;
   color: #111;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .benefits {
+    padding: 50px 32px;
+  }
+  .list-benefits {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .list-item-benefits {
+    width: 308px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
 }
