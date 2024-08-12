@@ -93,7 +93,8 @@ img {
   letter-spacing: -0.03em;
   color: #fff;
 }
-/* benefits */
+/* benefits - сделано, кроме ::after */
+
 .benefits {
   background-color: #1e1823;
   padding-top: 20px;
@@ -113,6 +114,7 @@ img {
   padding: 15px;
   border-radius: 365px;
   margin-bottom: 22px;
+  overflow: visible;
 }
 .benefits-cover {
   font-weight: 600;
@@ -221,13 +223,14 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  /* benefits */
   .container {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
   .benefits {
-    padding: 50px 32px;
+    padding: 50px 32px 85px 32px;
   }
   .list-benefits {
     flex-direction: row;
@@ -239,8 +242,21 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+  }
+  .benefits {
+    padding: 50px;
+  }
+  .list-benefits {
+    column-gap: 70px;
+  }
+  .list-item-benefits {
+    padding-right: 18px;
+    width: 308px;
+  }
+  .list-item-benefits:nth-child(3) {
+    padding-right: 0;
   }
 }
