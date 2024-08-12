@@ -1,0 +1,220 @@
+body {
+  background-color: #fafafa;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  margin-bottom: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.headline {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+.headline-color {
+  color: #fd9222;
+}
+/* header */
+.logo-header-text {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.03em;
+  color: #111;
+}
+/* main */
+.container-main {
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.2) 100%
+    ),
+    url(/img/hero-chocolate.jpg);
+  min-width: 280px;
+  max-width: 335px;
+  height: 621px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+}
+.main-headline {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+/* benefits */
+.benefits {
+  background-color: #1e1823;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.list-benefits {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.list-item-benefits {
+  padding-right: 28px;
+}
+.benefits-icon {
+  fill: #fd9222;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  border-radius: 365px;
+  margin-bottom: 22px;
+}
+.benefits-cover {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+.benefits-text {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ingredients */
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ingredients-headline {
+  width: 280px;
+  margin-bottom: 24px;
+}
+.ingredients-headline-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111;
+  margin-bottom: 32px;
+}
+.list-ingredients {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.list-item-ingredients:nth-child(2) {
+  background-color: #fff;
+}
+.list-item-ingredients:nth-child(3) {
+  background-color: #1e1823;
+  border: 1px solid #1e1823;
+}
+.list-item-ingredients:nth-child(4) {
+  background-color: #fff;
+}
+.list-item-ingredients:nth-child(1) > .ingredients-text {
+  color: #fff;
+}
+.list-item-ingredients:nth-child(3) > .ingredients-text {
+  color: #fff;
+}
+.list-item-ingredients {
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  padding: 28px 55px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  background-color: #fd9222;
+}
+.ingredients-img {
+  padding-left: 28px;
+}
+.ingredients-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+/* made */
+.made {
+}
+.container-todo {
+  border-radius: 15px;
+  padding: 20px 14px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.made-cover {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: #111;
+  /* width: 307px; */
+}
+
+.list-made {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+.made-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #111;
+}
