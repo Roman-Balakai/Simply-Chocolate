@@ -133,6 +133,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 .ingredients-headline {
   width: 280px;
@@ -193,7 +195,9 @@ img {
 }
 
 /* made */
-
+.made {
+  padding-bottom: 60px;
+}
 .headline-made {
   margin-bottom: 32px;
 }
@@ -232,13 +236,152 @@ img {
   letter-spacing: -0.02em;
   color: #111;
 }
-
+/*rewiew  */
+.rewiew {
+  padding-bottom: 93px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headline-rewiew {
+  margin-bottom: 74px;
+}
+.order-rewiew {
+  display: flex;
+  margin-bottom: 32px;
+}
+.order-list-rewiew {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background-color: #fff;
+  padding: 0 18px 26px 18px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.img-rewiew {
+  margin-top: -40px;
+  margin-bottom: 18px;
+  border-radius: 100%;
+}
+.rewiew-headline {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #111;
+  margin-bottom: 24px;
+}
+.rewiew-text {
+  min-width: 244px;
+  max-width: 299px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+.rewiew-button {
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #111;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  min-width: 162px;
+}
+.rewiew-button:hover {
+  background-color: #fd9222;
+  color: #fff;
+}
+.rewiew-button:focus {
+  background-color: #fd9222;
+  color: #fff;
+}
+.rewiew-button:active {
+  background-color: #fd9222;
+  color: #fff;
+}
+.footer {
+  background-color: #1e1823;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.footer-headline {
+  width: 250px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.footer-headline-color {
+  color: #fd9222;
+}
+.footer-link-subscribe {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.order-footer-link {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+.footer-list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14286;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.subscribe-footer {
+  display: flex;
+  flex-direction: row;
+  row-gap: 8px;
+}
+.footer-button {
+  border-radius: 100px;
+  padding: 14px 26px;
+  background-color: #fd9222;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+}
+.email-form {
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  padding: 14px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #1e1823;
+}
+@media screen and (max-width: 767px) {
+  .order-rewiew > .order-list-rewiew:nth-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .order-rewiew > .order-list-rewiew:nth-child(3) {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   /* benefits */
   .container {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
+  }
+  .headline {
+    font-size: 24px;
   }
   .benefits {
     padding: 50px 32px 85px 32px;
@@ -249,7 +392,11 @@ img {
     gap: 32px;
   }
   .list-item-benefits {
-    width: 308px;
+    width: 336px;
+  }
+  .ingredients {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .ingredients-headline {
     width: 411px;
@@ -267,17 +414,52 @@ img {
     row-gap: 30px;
   }
   .made {
-    padding: 0 77px;
+    padding: 0 77px 80px 77px;
   }
   .headline-made {
     margin-bottom: 50px;
   }
   .container-todo {
     row-gap: 28px;
-    padding: 32px 102px 32px 32px;
+    padding: 32px 32px 32px 32px;
   }
   .made-cover {
     width: 350px;
+  }
+  .made-text {
+    width: 464px;
+  }
+  .rewiew {
+    padding-bottom: 80px;
+  }
+  .headline-rewiew {
+    margin-bottom: 91px;
+  }
+  .order-rewiew {
+    column-gap: 16px;
+    margin-bottom: 95px;
+  }
+  .order-list-rewiew {
+    padding: 0 16px 26px 16px;
+  }
+  .rewiew-text {
+    max-width: 312px;
+  }
+  .rewiew-button {
+    font-size: 18px;
+    padding: 14px 40px;
+    min-width: 222px;
+  }
+  .footer-link-subscribe {
+    flex-direction: row;
+    column-gap: 32px;
+  }
+  .order-footer-link {
+    flex-direction: row;
+    column-gap: 16px;
+  }
+  .order-footer-link-list {
+    align-content: center;
   }
 }
 
@@ -293,10 +475,15 @@ img {
   }
   .list-item-benefits {
     padding-right: 18px;
-    width: 308px;
+    width: 326px;
   }
   .list-item-benefits:nth-child(3) {
     padding-right: 0;
+    width: 308px;
+  }
+  .ingredients {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .list-ingredients {
     column-gap: 16px;
@@ -309,16 +496,23 @@ img {
     padding-left: 0;
   }
   .made {
-    padding: 0 32px;
+    padding: 0 32px 100px 32px;
   }
   .made-content {
     flex-direction: row;
     column-gap: 20px;
   }
-  .container-todo {
-    padding: 32px 59px 32px 32px;
-  }
   .made-text {
     width: 425px;
+  }
+  .rewiew {
+    padding-bottom: 100px;
+  }
+  .order-rewiew {
+    column-gap: 28px;
+    margin-bottom: 50px;
+  }
+  .order-list-rewiew {
+    padding: 0 24px 24px 24px;
   }
 }
