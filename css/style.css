@@ -46,6 +46,8 @@ img {
   padding-right: 20px;
   justify-items: center;
   min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Ingridience */
 .ingridiens {
@@ -135,7 +137,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: center;
 }
 .container-title {
   font-weight: 600;
@@ -156,7 +157,7 @@ img {
   background-color: #fff;
   border-radius: 15px;
   gap: 20px;
-  max-width: 307px;
+  max-width: 335px;
 }
 .made-title {
   font-weight: 600;
@@ -174,6 +175,75 @@ img {
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
+}
+/* rewiew */
+.rewiew {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rewiew-main {
+  padding-bottom: 74px;
+}
+.rewiew-order {
+  padding-bottom: 32px;
+}
+.rewiew-order-list:nth-child(2) {
+  display: none;
+}
+.rewiew-order-list:nth-child(3) {
+  display: none;
+}
+.rewiew-order-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 42px;
+}
+.rewiew-image {
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin-bottom: 8px;
+}
+.rewiew-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #111;
+  margin-bottom: 24px;
+}
+.rewiew-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+.rewiew-btn {
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 12px 27px;
+  width: 162px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
+}
+.rewiew-btn:hover {
+  background: #fd9222;
+  color: #fff;
 }
 @media screen and (min-width: 768px) {
   .ingridiens {
